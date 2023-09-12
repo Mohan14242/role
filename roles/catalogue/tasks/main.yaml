@@ -1,5 +1,5 @@
 - name: install the nodejs 
-  anible.builtin.import_role:
+  ansible.builtin.import_role:
     name: common
     tasks_from: nodejs
 - name: check roboshop user exist or not
