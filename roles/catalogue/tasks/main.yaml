@@ -7,6 +7,11 @@
     name: common
     tasks_from: app-setup
 
+- name: install dependencies
+  ansible.builtin.command: npm install
+  args:
+    chdir: /app
+
 - name: copy catalogue service
   ansible.builtin.copy:
     src: catalogue.service
